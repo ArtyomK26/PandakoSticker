@@ -101,7 +101,7 @@
 
 .product {
   top: 70px;
-  max-width:1200px; 
+  max-width:1000px; 
   height: 900px;
   margin: auto;
   display: flex;
@@ -237,8 +237,8 @@
 }
 
 .product-image {
-  width: 475px;
-  height: 550px;
+  width: 400px;
+  height: 450px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
