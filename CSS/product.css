@@ -409,11 +409,11 @@ body {
   
   
   .image-grid {
-    text-align: center; /* Center the image horizontally */
+    text-align: center; 
   }
   
   .product-image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-width: 100%; 
   }
   
   .content-grid {
