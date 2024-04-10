@@ -718,7 +718,7 @@ form {
 @media screen and (max-width: 1600px) {
   
   .products-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
