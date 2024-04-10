@@ -10,4 +10,4 @@ PandaKo is an interactive e-commerce platform where personalized creativity meet
 
 - HTML
 - CSS
-- JavaScript (If you've used it)
+- Javascript 
