@@ -418,9 +418,9 @@ body {
   
   .content-grid {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    flex-direction: column; /* Align content vertically */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
   }
   
   @media (min-width: 768px) {
@@ -489,4 +489,4 @@ html {
   padding: 20px;
 }
 
-/*end of footer*/
+/*end of footer
