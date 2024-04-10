@@ -149,10 +149,9 @@
 .button-iwantit {
   appearance: none;
   background-color: #66B7ba;
-  border: 2px solid #274647;
-  border-radius: 15px;
+  border-radius: 8%;
   box-sizing: border-box;
-  color: #274647;
+  color: white;
   cursor: pointer;
   display: block;
   font-family: "Varela Round", sans-serif;
@@ -171,6 +170,7 @@
   will-change: transform;
   justify-content: center;
   margin-top: 30px;
+  box-shadow: -4px 4px 7px 0 rgba(78, 124, 166, 0.17);
   
 
 
@@ -748,7 +748,7 @@ form {
 
 .auth-forms {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -769,9 +769,9 @@ input[type=birth-date]
   padding: 10px 20px;
   margin-bottom: 20px;
   border: 1px solid #274647;
-  border-radius: 15px;
+  border-radius: 6px;
   background-color: #f9f9f9;
-  color: #274647;
+  color: #448587;
   font-family: "Varela Round", sans-serif;
 }
 
