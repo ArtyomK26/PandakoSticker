@@ -1,3 +1,5 @@
+/*toolbar*/
+
 .toolbar {
   background-color: #C9f1f3;
   display: flex;
@@ -69,6 +71,8 @@
   text-align: center;
 
 }
+
+/*main*/
 
 .container {
   display: flex;
@@ -388,6 +392,9 @@ html {
   gap: 20px;
   padding: 20px;
 }
+
+/*background*/
+
 
 
 @keyframes color {
@@ -754,7 +761,10 @@ form {
 
 input[type=email],
 input[type=password],
-input[type=text] {
+input[type=confirm-password],
+input[type=text],
+input[type=birth-date]
+ {
   width: calc(100% - 40px);
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -767,7 +777,7 @@ input[type=text] {
 
 button.button-iwantit {
   width: calc(100% - 40px);
-  margin: 0 20px;
+  margin: 20px 20px;
 }
 
 h2 {
