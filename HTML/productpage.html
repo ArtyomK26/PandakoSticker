@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PandaKo</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="CSS/productCSS.css" />
     <script src="/function.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,31 +25,26 @@
 </header>
 <body>
     <div class="container">
-        <nav id="siteBreadcrumb">
-            <ol class="breadcrumb">
-                <li><a href="/">עמוד הבית</a></li>
-                <li><a href="/#">מדבקות שם</a></li>
-                <li><a href="/#">מדבקות שם דגם ריף</a></li>
-            </ol>
-        </nav>
-        <a href="/images/home_page_images/reed_stickers.png">
-            <img class="product-image" src="/images/home_page_images/reef_stickers.png" alt="reed stickers">
-        </a>
-        <div class="product-details">
-            <h2>מדבקות שם דגם ריף</h2>
-            <h3>50 מדבקות במגוון גדלים וצבעים</h3>
-            <h3 class="price">30.00₪</h3>
-            <p class="notes">בקניית שתי מדבקות ומעלה מחיר לדף שני הוא 25₪</p>
+        <div class="image-grid">
+            <a href="/images/home_page_images/reef_stickers.png">
+                <img class="product-image" src="/images/home_page_images/reef_stickers.png" alt="reed stickers">
+            </a>
         </div>
-    </fields>
-    <form action="/action_page.php">
-        <label for="name">מה לכתוב על המדבקות?</label>
-        <input type="text" id="fname" name="firstname" placeholder="מלאו את השם פה">
-        </select>
-      
-        <input type="submit" value="הוספה לסל הקניות">
-      </form>
-    </fields>
+        <div class="content-grid">
+            <div class="product-details">
+                <h2>תעודת לידה דגם סתיו</h2>
+                <h3>50 מדבקות במגוון גדלים וצבעים</h3>
+                <h3 class="price"><span class="currency">₪</span>30.00</h3>
+                <p class="notes">בקניית שתי מדבקות ומעלה מחיר לדף שני הוא 25₪</p>
+            </div>
+            <form action="#">
+                <label class="label1" for="name">שם הילד</label>
+                <input type="text" id="fname" name="firstname" placeholder="מלאו את השם פה">
+
+                <input type="submit" value="הוספה לסל הקניות">
+            </form>
+        </div>
     </div>
+    
 </body>
 </html>
