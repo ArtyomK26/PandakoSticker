@@ -47,53 +47,57 @@
         </div>
         <div class="products-grid">
             <h2 class="products-header">המוצרים שלנו</h2>
-            <div class="products-container">
-                <div class="product-item">
-                    <img src="images\Namestickers4.png" alt="namestickers" class="product-image"/>
-                    <div class="product-info">
-                        <div class="product-title">מדבקות שם דגם ריף</div>
-                        <div class="product-description">50 מדבקות במגוון גדלים וצבעים</div>
-                        <div class="product-price">₪30.00</div>
+            <div class="scroll-container">
+              <button class="scroll-arrow left" aria-label="Scroll left">‹</button>
+              <div class="products-container">
+                    <div class="product-item">
+                        <img src="images\Namestickers4.png" alt="namestickers" class="product-image"/>
+                        <div class="product-info">
+                            <div class="product-title">מדבקות שם דגם ריף</div>
+                            <div class="product-description">50 מדבקות במגוון גדלים וצבעים</div>
+                            <div class="product-price">₪30.00</div>
+                        </div>
                     </div>
-                </div>
-                <div class="product-item">
-                    <a href="HTML\Pandako-bcstav.html" class="product-link">
-                        <img src="images\Birth-Certificate.jpg" alt="birth certificate" class="product-image"/></a>
-                    <div class="product-info">
-                        <div class="product-title">תעודת לידה דגם סתיו</div>
-                        <div class="product-description">תעודת לידה מעוצבת לבחירתכם</div>
-                        <div class="product-price">₪70.00</div>
+                    <div class="product-item">
+                        <a href="HTML\Pandako-bcstav.html" class="product-link">
+                            <img src="images\Birth-Certificate.jpg" alt="birth certificate" class="product-image"/></a>
+                        <div class="product-info">
+                            <div class="product-title">תעודת לידה דגם סתיו</div>
+                            <div class="product-description">תעודת לידה מעוצבת לבחירתכם</div>
+                            <div class="product-price">₪70.00</div>
+                        </div>
+                                    
+                    </div>
+                    <div class="product-item">
+                        <img src="images\NameStickers2.png" alt="aviv name stickers" class="product-image"/>
+                        <div class="product-info">
+                            <div class="product-title">מדבקות שם דגם אביב</div>
+                            <div class="product-description">35 מדבקות במגוון גדלים וצבעים</div>
+                            <div class="product-price">₪20.00</div>
+                        </div>
                     </div>
                                 
-                </div>
-                <div class="product-item">
-                    <img src="images\NameStickers2.png" alt="aviv name stickers" class="product-image"/>
-                    <div class="product-info">
-                        <div class="product-title">מדבקות שם דגם אביב</div>
-                        <div class="product-description">35 מדבקות במגוון גדלים וצבעים</div>
-                        <div class="product-price">₪20.00</div>
+                    <div class="product-item">
+                        <img src="images\NameStickers3.png" alt="safaristickers" class="product-image"/>
+                        <div class="product-info">
+                            <div class="product-title">מדבקות שם דגם ספארי</div>
+                            <div class="product-description">50 מדבקות במגוון גדלים וצבעים</div>
+                            <div class="product-price">₪30.00</div>
+                        </div>
                     </div>
-                </div>
-                            
-                <div class="product-item">
-                    <img src="images\NameStickers3.png" alt="safaristickers" class="product-image"/>
-                    <div class="product-info">
-                        <div class="product-title">מדבקות שם דגם ספארי</div>
-                        <div class="product-description">50 מדבקות במגוון גדלים וצבעים</div>
-                        <div class="product-price">₪30.00</div>
-                    </div>
-                </div>
 
-                <div class="product-item">
-                        <img src="images\TaggedStickers.jpg" alt="TaggedStickers" class="product-image"/></a>
-                    <div class="product-info">
-                        <div class="product-title">תעודת לידה דגם סתיו</div>
-                        <div class="product-description">תעודת לידה מעוצבת לבחירתכם</div>
-                        <div class="product-price">₪70.00</div>
-                    </div>
-                                
+                    <div class="product-item">
+                            <img src="images\TaggedStickers.jpg" alt="TaggedStickers" class="product-image"/></a>
+                        <div class="product-info">
+                            <div class="product-title">מדבקות ממותגות לפי בקשה</div>
+                            <div class="product-description">מדבקות ממותגות בהתאמה אישית</div>
+                            <div class="product-price">₪35.00</div>
+                        </div>
+                    </div>               
                 </div>
-                   
+                <button class="scroll-arrow right" aria-label="Scroll right">›</button>  
+            </div>
+            
         </div>
     </main>
     <footer class="site-footer">
@@ -123,5 +127,15 @@
                 </a>
             </div> 
     </footer>
+    <script>
+        const scrollContainer = document.querySelector('.products-container');
+        document.querySelector('.scroll-arrow.left').addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: 300, behavior: 'smooth' }); 
+        });
+
+        document.querySelector('.scroll-arrow.right').addEventListener('click', () => {
+         scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
