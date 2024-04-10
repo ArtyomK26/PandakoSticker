@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות / הרשמה</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/adikostyle.css"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-forms">
+            <div class="login-form">
+                <h2>התחברות</h2>
+                <form action="action_url" method="post">
+                    <input type="email" name="email" placeholder="דואר אלקטרוני" required>
+                    <input type="password" name="password" placeholder="סיסמא" required>
+                    <button type="submit" class="button-iwantit">התחבר</button>
+                </form>
+                <button id="showRegister" class="button-iwantit" style="background-color: #274647; color: #C9F1F3;">הרשמה</button>
+            </div>
+            <div class="register-form" style="display: none;">
+                <h2>הרשמה</h2>
+                <form action="action_url" method="post">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="דואר אלקטרוני" required>
+                    <input type="password" name="password" placeholder="סיסמא" required>
+                    <button type="submit" class="button-iwantit">הרשם</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="anime1">
+        <img src="../images/naruto-anime1.png" alt="naruto sticker" class="anime1">
+    </div>
+    <div class="anime3">
+        <img src="../images/avocado-anime3.png" alt="avocado sticker" class="anime3">
+    </div>
+    <script>
+        document.getElementById('showRegister').addEventListener('click', function() {
+            document.querySelector('.login-form').style.display = 'none';
+            document.querySelector('.register-form').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
