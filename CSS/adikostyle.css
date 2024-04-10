@@ -315,6 +315,21 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  height: 100px;
+  width: 40px;
+}
+
+.scroll-arrow.left::before {
+  content: '>'; 
+  display: block;
+  text-align: center;
+}
+
+
+.scroll-arrow.right::before {
+  content: '<'; 
+  display: block;
+  text-align: center;
 }
 
 .scroll-arrow.left {
