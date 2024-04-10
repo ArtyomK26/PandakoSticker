@@ -286,34 +286,49 @@
 
 .site-footer {
   padding: 20px 0;
-  text-align: center;
-  position: relative;
+  position: absolute;
+  left: 0;
   bottom: 0;
+  height: auto; 
   width: 100%;
-  margin-bottom: auto;
   background-color: #C9f1f3;
   font-family: "Varela Round", sans-serif;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+html {
+  position: relative;
+  min-height: 100%;
 }
+
+
+.footer-links, .contact-info {
+  text-align: center;
+  width: 100%;
+}
+
 
 .footer-link {
   color: #001010;
   text-decoration: none;
   font-size: 22px;
-  font-family: "Varela Round", sans-serif;
   padding: 0 10px;
 }
 
 .contact-info {
   font-size: 22px;
   color: #001010;
+  margin-top: 20px; 
 }
 
+.footer-soc-icons {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
 
 
 @keyframes color {
@@ -346,6 +361,8 @@ body {
   background: #e8f0f2;
   animation: color 12s infinite linear;
   width: 100%;
+  margin: 0;
+  padding-bottom: 120px;
 
 }
 
@@ -742,13 +759,13 @@ h2 {
 
 .content {
   padding: 20px;
-  margin-top: 100px; /* Adjust based on your toolbar height */
+  margin-top: 100px; 
 }
 
 .about-text p {
-  color: #274647; /* Text color, matching your theme */
+  color: #274647; 
   font-family: "Varela Round", sans-serif;
-  font-size: 20px; /* Adjust size as needed */
-  line-height: 1.6; /* For better readability */
-  margin-bottom: 20px; /* Space between paragraphs */
+  font-size: 20px; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
 }
