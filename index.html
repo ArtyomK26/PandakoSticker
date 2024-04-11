@@ -45,7 +45,7 @@
                 <div class="logo-container">
                     <img src="images\Logo.png" alt="Logo PandaKo" class="logo-image">
                     <h2>PandaKo</h2>
-                    <div class="button-iwantit">אני רוצה כזה!</div> 
+                    <button id="iwantit-button" class="button-iwantit">אני רוצה כזה!</button> 
                 </div>
             </div>
         </div>
@@ -104,34 +104,10 @@
             
         </div>
     </main>
-    <footer class="site-footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">חנות</a>
-            <a href="#" class="footer-link">אודות</a>
-            <a href="#" class="footer-link">קטלוג</a>
-            <a href="#" class="footer-link">משלוחים</a>
-        </div>
-        <div class="contact-info">
-            צור קשר: <a href="tel:+0549876896">0549876897</a>
-        </div>
-        <div class="footer-soc-icons">
-            <div class="InstaIcon">
-                <a href="https://www.instagram.com/itamar_ben_gvir_/">
-                    <img src="images/Icons/InstagramFooter.png" alt="instagram" class="footer-icon">
-                </a>
-            </div>
-            <div class="FacebookIcon">
-                <a href="https://www.facebook.com/miri.regev.il/">
-                    <img src="images/Icons/FacebookFooter.png" alt="facebook" class="footer-icon">
-                </a>
-            </div>
-            <div class="EmailIcon">
-                <a href="artyomkobelev@gmail.com">
-                    <img src="images/Icons/MailFooter.png" alt="ContactEmail" class="footer-icon">
-                </a>
-            </div> 
-    </footer>
+ >
     <script>
+
+        
         const scrollContainer = document.querySelector('.products-container');
         document.querySelector('.scroll-arrow.left').addEventListener('click', () => {
         scrollContainer.scrollBy({ left: 300, behavior: 'smooth' }); 
@@ -140,6 +116,44 @@
         document.querySelector('.scroll-arrow.right').addEventListener('click', () => {
          scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
         });
+
+
+        
+        document.getElementById('iwantit-button').addEventListener('click', function() {
+            this.classList.add('fade-out'); 
+    
+    
+    setTimeout(function() {
+        window.location.href = 'name_stickers_category.html';
+    }, 1000); 
+    });
     </script>
 </body>
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="#" class="footer-link">חנות</a>
+        <a href="about_us.html" class="footer-link">אודות</a>
+        <a href="#" class="footer-link">קטלוג</a>
+        <a href="#" class="footer-link">משלוחים</a>
+    </div>
+    <div class="contact-info">
+        צור קשר: <a href="tel:+0549876896">0549876897</a>
+    </div>
+    <div class="footer-soc-icons">
+        <div class="InstaIcon">
+            <a href="https://www.instagram.com/itamar_ben_gvir_/">
+                <img src="images/Icons/InstagramFooter.png" alt="instagram" class="footer-icon">
+            </a>
+        </div>
+        <div class="FacebookIcon">
+            <a href="https://www.facebook.com/miri.regev.il/">
+                <img src="images/Icons/FacebookFooter.png" alt="facebook" class="footer-icon">
+            </a>
+        </div>
+        <div class="EmailIcon">
+            <a href="artyomkobelev@gmail.com">
+                <img src="images/Icons/MailFooter.png" alt="ContactEmail" class="footer-icon">
+            </a>
+        </div> 
+    </footer>
 </html>

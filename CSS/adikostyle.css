@@ -88,7 +88,7 @@
   flex-direction: column;
   max-width: 375px;
   justify-content: center;
-  margin-right: 350px;
+  margin-right: 200px;
   
 }
 
@@ -396,6 +396,23 @@
 .scroll-arrow.right {
   right: 0;
 }
+
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards; 
+}
+
+
+
+
+
 
 
 /*FOOTER STYLE*/
@@ -913,7 +930,12 @@ h2 {
 .about-text p {
   color: #274647; 
   font-family: "Varela Round", sans-serif;
-  font-size: 20px; 
+  font-size: 30px; 
   line-height: 1.6; 
-  margin-bottom: 20px; 
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
