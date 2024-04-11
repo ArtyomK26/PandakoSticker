@@ -54,6 +54,16 @@
             </form>
         </div>
     </div>
+    <script>
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+        
+            var container = document.querySelector('.container'); 
+            var iframeHtml = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8YcGkVY68JtiiXByDG72ectJcYBb3G324NFWMJ1S6Rppa3Q/viewform?embedded=true" width="640" height="1923" frameborder="0" marginheight="0" marginwidth="0">בטעינה…</iframe>';
+            
+            container.innerHTML = iframeHtml; 
+        });
+        </script>
 </body>
     <footer class="site-footer">
         <div class="footer-links">
