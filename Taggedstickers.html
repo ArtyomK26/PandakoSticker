@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tagged-Stickers</title>
-    <link rel="stylesheet" href="CSS/product.css" />
+    <link rel="stylesheet" href="CSS\adikostyle.css" />
     <script src="/function.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,24 +33,44 @@
     </div>
 </header>
 <body>
-    <div class="container2">
-        <div class="image-grid">
-            <a href="images\TaggedStickers.jpg">
-                <img class="product-image" src="images\TaggedStickers.jpg" alt="stav sticker name">
-            </a>
-        </div>
-
-        <div class="content-grid">
-            <div class="product-details">
-                <h2>מדבקות ממותגות לפי בקשה</h2>
-                <h3>מדבקות ממותגות בהתאמה אישית</h3>
-                <h3 class="price"><span class="currency">₪</span>35.00</h3>
-            </div>
-            <p>מדבקות ממותגות בהתאמה אישית לפי בקשת הלקוח. ניתן להדפיס על המדבקות כל דבר שתרצו, כגון: תמונות, כיתות, סמלים ועוד. ניתן להדפיס על מדבקות כל צבע שתרצו. ניתן להדפיס על מדבקות כל גודל שתרצו. ניתן להדפיס על מדבקות כל כמות שתרצו. ניתן להדפיס על מדבקות כל טקסט שתרצו.</p>
     
+    
+        <div class="container2">
+          <div class="content2">
             
+            
+            <div class="kubiaright2">
+                <img class="product-image2" src="images\TaggedStickers.jpg" alt="stav sticker name">
+            </div>
+            
+            
+            
+            <div class="kubialeft2">
+              <h2>מדבקות ממותגות לפי בקשה</h2>
+              <h3>מדבקות ממותגות בהתאמה אישית</h3>
+              <h3 class="price"><span class="currency">₪</span>35.00</h3>
+              <p>מדבקות ממותגות בהתאמה אישית...</p>
+              <div class="button-iwantit" onclick="showForm()">אני רוצה כזה!</div> 
+            </div>
+            
+          </div>
+          <div id="formContainer" class="form-container">
+           
+          </div>
         </div>
-    </div>
+        <script>
+          function showForm() {
+            const leftContent = document.querySelector('.kubialeft2');
+            leftContent.style.display = 'none'; 
+            
+            const formContainer = document.getElementById('formContainer');
+            formContainer.innerHTML = `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4I6o3B-feURftUuOltj1FsMqdzBKtmopfAXO3KEBDEMvgUw/viewform?embedded=true" width="640" height="1923" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`;
+            formContainer.style.display = 'flex'; //
+          }
+        </script>
+      
+</body>      
+
     <footer class="site-footer">
         <div class="footer-links">
             <a href="#" class="footer-link">חנות</a>
@@ -78,5 +98,5 @@
                 </a>
             </div> 
     </footer>
-</body>
+
 </html>
