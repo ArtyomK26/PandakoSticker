@@ -207,39 +207,39 @@
 }
 
 .kubialeft2 {
-  flex: 1; /* This will make the left side adjust according to content size */
+  flex: 1; 
   padding-right: 20px;
 }
 
 .kubiaright2 {
-  flex: 2; /* This will make the right side larger */
-  max-width: 600px; /* You can adjust this to set a maximum size */
+  flex: 2; 
+  max-width: 600px;
   padding-left: 20px;
 }
 
 .product-image2 {
   width: 100%;
   height: auto; 
-  object-fit: cover; /* This will cover the area of the container */
+  object-fit: cover; 
 }
 
 .form-container {
-  width: 640px; /* Set this to the width of the form or 100% to take full container width */
-  display: none; /* Hidden by default */
+  width: 640px;
+  display: none; 
 }
 
-/* Media Query for responsiveness */
+
 @media (max-width: 768px) {
   .container2 {
     flex-direction: column;
   }
   .kubialeft2, .kubiaright2 {
-    width: 100%; /* Make elements stack on top of each other and take full width on smaller screens */
+    width: 100%;
     max-width: none;
     margin: 0;
   }
   .form-container {
-    width: 100%; /* Make form take full width on smaller screens */
+    width: 100%; 
   }
 }
 
@@ -867,13 +867,48 @@ h2 {
   justify-content: center;
   z-index: 1000;
 }
+
+.hacker {
+  position: absolute; 
+  top: 350px; 
+  right: 0;
+  width: 500px; 
+  height: auto;
+}
+
+.hacker img {
+  width: 100%;
+  height: auto;
+  background: none; 
+}
+
 .anime3 img {
   max-width: 100%;
   height: auto; 
   margin: auto;
   display: block; 
 }
+
+
+.hacker-text {
+  position: absolute;
+  color: #274647;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  top: 100px;
+  width: 400px;
+  height: auto;
+  background-color:C9F1F3 ;
+}
+
+.hacker-text p {
+  color: #274647; 
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px; 
  
+  margin-bottom: 20px; 
+}
 
 /* about us style */
 

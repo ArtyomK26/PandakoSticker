@@ -204,17 +204,7 @@ body {
     color: #7cb0b4;
   }
   
-  header {
-    height: 66px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0 20px;
-    background-color: #e7feff;
-    list-style-type: none;
-  }
+
   
   .left-icons {
     display: flex;
