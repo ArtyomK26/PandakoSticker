@@ -564,17 +564,7 @@ h3 {
   color: #7cb0b4;
 }
 
-header {
-  height: 66px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0 20px;
-  background-color: #e7feff;
-  list-style-type: none;
-}
+
 
 .left-icons {
   display: flex;
@@ -872,7 +862,7 @@ h2 {
   position: absolute; 
   top: 350px; 
   right: 0;
-  width: 500px; 
+  width: 400px; 
   height: auto;
 }
 
@@ -895,17 +885,20 @@ h2 {
   color: #274647;
   text-align: center;
   margin-bottom: 15px;
-  font-weight: bold;
-  top: 100px;
-  width: 400px;
+  top: 200px;
+  width: 300px;
   height: auto;
-  background-color:C9F1F3 ;
+  background-color:#C9F1F3 ;
+  padding: 10px;
+  border: 2px #000;
+  border-style: groove;
+  right: 50px;
 }
 
 .hacker-text p {
   color: #274647; 
   font-family: "Varela Round", sans-serif;
-  font-size: 30px; 
+  font-size: 20px; 
  
   margin-bottom: 20px; 
 }
